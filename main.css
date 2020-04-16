@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  height: 100%; 
+  font-family: 'Open Sans Condensed',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(assets/OpenSans-Regular-webfont.woff) format(woff)
+      url(assets/OpenSans-Regular-webfont.eot)  format(eot)
+      url(assets/OpenSans-Regular-webfont.svg)  format(svg)
+      url(assets/OpenSans-Regular-webfont.ttf)  format(ttf)
+}
+
+.pricingTable{
+  font-family: 'OpenSans';
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; 
+}
+
+.pricingTable li{
+  list-style: none;
+}
+
+.pricingTable section ul{
+  text-align: center;
+}
+
+.pricingTable section:nth-of-type(1),section:nth-of-type(2),section:nth-of-type(3){
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.76);
+  -moz-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.76);
+  box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.76);
+}
+
+footer{
+  font-family: 'OpenSans';
+  font-weight: 300;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: flex;  
+}
+footer li {
+  list-style: none;
+}
+
+
+footer {
+  display: flex;
+  border-top: 1px solid;
+  margin-top: 3rem;
+}
+
+.column {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+.div1 {
+  order: 1;
+}
+.div2 {
+  order: 4;
+}
+.div3 {
+  order: 2;
+}
+.div4 {
+  order: 5;
+}
+
+ul{
+  padding-inline-start: 0px;
+}
+header{
+  display: inline;
+}
+nav{
+  float: inline-end;
+  padding: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.76);
+  -moz-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.76);
+  box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.76);
+
+}
+nav p, nav ul{
+  display: inline-block;
+}
+.nav>li {
+  display: inline-block;
+}
+nav ul {
+  list-style: none;
+  float: right;
+}
+nav li{
+  display: block;
+}
+a{
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+}
+
+.container {
+  width: 80%; 
+  margin: 0 auto;   
+}
+
+
+
+
+/*button styles*/ 
+
+/* EXPLAIN THIS STYLE RULE (1 mark) */ 
+/* padding create a gap around the text inside the button, font-size is the fraction length of section pricing table,
+line-height is 1.5 times of section pricing table font-size and border radius makes the button round not sharp */
+.pricingTable button {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  margin-bottom: 20px;
+}
+
+
+
+.pricingTable section:first-of-type button {
+  border: 1px solid #007bff;  
+}
+
+
+/* FIX THIS STYLE RULE  (2 marks) */ 
+
+
+.pricingTable section:nth-of-type(2) button,
+.pricingTable section:nth-of-type(3) button {
+  background-color: #007bff; 
+  color: #fff; 
+  border: transparent;
+}
+
+/* Navigate to https://getbootstrap.com/docs/4.4/examples/pricing/. What
+common layout pattern is used in this interface design?. Include your answer as
+a comment in main.css (1 mark).  */
+
+/* The common layout in this interface design is grid layout */
+
+.bannerimage{
+  margin-top: 90px;
+  background-image: url("image/pexels-photo-4067508.jpeg") cover no-repeat ;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  width:auto;
+}
+img {
+  width: 100%; 
+}
